@@ -11,8 +11,10 @@
   </head>
   <body>
     <!-- Title Heading fixed position -->
-    <div class="flex items-center justify-between shadow-xl sticky top-0 bg-white">
-      <img src="./img/mysho--logo.png" class="w-[100px] " id="logo"  alt="" />
+    <div
+      class="flex items-center justify-between shadow-xl sticky top-0 bg-white"
+    >
+      <img src="./img/mysho--logo.png" class="w-[100px]" id="logo" alt="" />
 
       <div class="flex border rounded-[8px] p-1 w-[40%] hidden md:flex">
         <img src="./img/search-icon.png" class="w-[50px]" alt="" />
@@ -23,91 +25,37 @@
         />
       </div>
 
-      <div style="margin-right: 5px;" class="flex items-center text-gray-600 hidden md:flex">
+      <div
+        style="margin-right: 5px"
+        class="flex items-center text-gray-600 hidden md:flex"
+      >
         <a href=""><p>Become a Seller</p></a>
-        <img class="w-[50px] h-[35px]" src="./img/cart.png" alt="">
-        <img class="w-[50px] h-[35px]" src="./img/profile.png" alt="">
+        <img class="w-[50px] h-[35px]" src="./img/cart.png" alt="" />
+        <img class="w-[50px] h-[35px]" src="./img/profile.png" alt="" />
       </div>
-      
-      <img class="w-[70px] md:hidden" src="./img/menu.png" alt="" />      
-    </div>
-    
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- /////-----Pixel Indicator-----\\\\\ -->
-    <style>
-      * {
-        margin: 0px;
-      }
-    </style>
-    <!-- பிக்சல் அளவைக் காட்டும் பிக்ஸட் பாக்ஸ் -->
-    <div
-      style="
-        width: 100%;
-        text-align: center;
-        position: fixed;
-        bottom: 0px;
-        background: rgb(222, 255, 188);
-        color: black;
-        padding: 5px;
-        font-family: sans-serif;
-        font-weight: bold;
-        z-index: 9999;
-      "
-    >
-      Width: <span id="page-width">0px</span>
+      <img class="w-[70px] md:hidden" src="./img/menu.png" alt="" />
     </div>
 
-    <script>
-      // பிக்சல் அளவைக் காட்டும் span டேக்
-      const pageWidthSpan = document.getElementById("page-width");
+    <!-- Banner Section -->
 
-      // அகலத்தைக் கணக்கிட்டு அப்டேட் செய்யும் ஃபங்க்ஷன்
-      function updateWidth() {
-        let currentWidth = window.innerWidth; // தற்போதைய அகலம் (Pixel)
-        pageWidthSpan.textContent = currentWidth + "px";
-      }
+    <div class="relative">
+      <img class="w-full" src="./img/inner banner.jpg" alt="" />
 
-      // பக்கம் லோட் ஆகும்போதும், ரீசைஸ் ஆகும்போதும் வேலை செய்ய
-      window.addEventListener("resize", updateWidth);
-      window.addEventListener("DOMContentLoaded", updateWidth);
-    </script>
-    <!-- /////-----Pixel Indicator-----\\\\\ -->
+      <div id="banner-x" class="bg-[#FDEEFA] flex justify-center relative h-14">
+        <div id="bannner-l" class="flex w-[97%] gap-3 border bg-white h-[30px] rounded-[5px] absolute top-3 items-center">
+          <img class="w-7" src="./img/returns.svg" alt="" />
+          <p class="text-[14px]">7 Days Easy Return</p>
+          <p>|</p>
+          <img class="w-7" src="./img/cod.svg" alt="" />
+          <p class="text-[14px]">Cash on Delivery</p>
+          <p>|</p>
+          <img class="w-7" src="./img/lowest-price.svg" alt="" />
+          <p class="text-[14px]">Lowest Prices</p>
+        </div>
+      </div>
+    </div>
+
     <script src="js.js"></script>
   </body>
 </html>
