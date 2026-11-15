@@ -8,11 +8,15 @@
     </title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
+    />
   </head>
-  <body>
+  <body class="bg-amber-200">
     <!-- Title Heading fixed position -->
     <div
-      class="flex items-center justify-between shadow-xl sticky top-0 bg-white"
+      class="flex items-center justify-between shadow-xl sticky top-0 bg-white z-10"
     >
       <img src="./img/mysho--logo.png" class="w-[100px]" id="logo" alt="" />
 
@@ -38,24 +42,98 @@
     </div>
 
     <!-- Banner Section -->
-
-    <div class="relative">
+    <div class="relative z">
       <img class="w-full" src="./img/inner banner.jpg" alt="" />
 
       <div id="banner-x" class="bg-[#FDEEFA] flex justify-center relative h-14">
-        <div id="bannner-l" class="flex w-[97%] gap-3 border bg-white h-[30px] rounded-[5px] absolute top-3 items-center">
+        <div
+          id="bannner-l"
+          class="flex w-[97%] gap-3 border bg-white h-[30px] rounded-[5px] absolute top-3 items-center"
+        >
           <img class="max-[501px]:w-5 w-7" src="./img/returns.svg" alt="" />
-          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">7 Days Easy Return</p>
+          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
+            7 Days Easy Return
+          </p>
           <p>|</p>
           <img class="max-[501px]:w-5 w-7" src="./img/cod.svg" alt="" />
-          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">Cash on Delivery</p>
+          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
+            Cash on Delivery
+          </p>
           <p>|</p>
-          <img class="max-[501px]:w-5 w-7" src="./img/lowest-price.svg" alt="" />
-          <p class=" max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">Lowest Prices</p>
+          <img
+            class="max-[501px]:w-5 w-7"
+            src="./img/lowest-price.svg"
+            alt=""
+          />
+          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
+            Lowest Prices
+          </p>
         </div>
       </div>
     </div>
 
+    <!-- Brands bar sections -->
+
+    <div class="brands_container .//. flex justify-around">
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/puma.png" class="w-10 min-[500px]:w-8" alt="" />
+        <p class="min-[500px]:text-[14px]">Puma</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/simple.png" class="w-10" alt="" />
+        <p>Simple</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/twitch.png" class="w-10" alt="" />
+        <p>twitch</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/adidas.png" class="w-10" alt="" />
+        <p>adidas</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/behaance.png" class="w-10" alt="" />
+        <p>behaance</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/leaves.png" class="w-10" alt="" />
+        <p>leaves</p>
+      </div>
+      <div class="brands_container-list .//. w-fit">
+        <img src="./img/icons/nike.png" class="w-10" alt="" />
+        <p>nike</p>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="bg-black text-white" style="padding: 30px">
+      <h1 class="text-[30px] font-bold">Mysho</h1>
+      <p class="text-[12px] font-extralight">
+        The Standard chunk of lorem ipsum used since the 1500s is reprodused
+        blow for those interest
+      </p>
+      <div class="flex gap-10">
+        <img
+          src="./img/twitter.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+        <img
+          src="./img/instagram.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+        <img
+          src="./img/facebook.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+      </div>
+      <p>@ 2026 Mysho.com</p>
+    </div>
     <script src="js.js"></script>
   </body>
 </html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
+    />
+  </head>
+  <body>
+    <!-- Title Heading fixed position -->
+    <div
+      class="flex items-center justify-between shadow-xl bg-white z-10"
+    >
+      <img src="./img/mysho--logo.png" class="w-[100px]" id="logo" alt="" />
+
+      <div class="flex border rounded-[8px] p-1 w-[40%] hidden md:flex">
+        <img src="./img/search-icon.png" class="w-[50px]" alt="" />
+        <input
+          type="text"
+          placeholder="Search Here"
+          class="outline-none hidden md:flex w-[80%]"
+        />
+      </div>
+
+      <div
+        style="margin-right: 5px"
+        class="flex items-center text-gray-600 hidden md:flex"
+      >
+        <a href=""><p>Become a Seller</p></a>
+        <img class="w-[50px] h-[35px]" src="./img/cart.png" alt="" />
+        <img class="w-[50px] h-[35px]" src="./img/profile.png" alt="" />
+      </div>
+
+      <img class="w-[70px] md:hidden" src="./img/menu.png" alt="" />
+    </div>
+
+    <div
+      id="con_container"
+      class="flex flex-col justify-self-center bg-[#1C232C] text-white"
+    >
+      <h1 class="text-[35px] font-bold">Contact Us</h1>
+      <p>Name:</p>
+      <input id="Input" class="text-black bg-white h-[50px]" type="text" />
+      <p>Email:</p>
+      <input id="Input" class="text-black bg-white h-[50px]" type="text" />
+      <p>Message:</p>
+      <textarea name="" id="" class="text-black bg-white resize-none h-[130px]"></textarea
+      ><br />
+      <button
+        class="flex bg-blue-800 w-fit"
+        style="padding: 7px; border-radius: 5px"
+      >
+        Submit
+      </button>
+    </div>
+
+    <div class="text-center">
+      <h1 class="text-[30px] font-bold">Join our News Letter</h1>
+      <p class="text-[15px] font-extralight">
+        Signup for our email newspaper to get exciusive discounts, updates, and
+        more
+      </p>
+      <input type="text" class="border border-3 w-100 rounded-[4px]"><br>
+      <button class="bg-black text-white" style="padding: 5px; border-radius: 5px;">Subscribe</button>
+    </div>
+
+
+
+    <div class="bg-black text-white" style="padding: 30px;">
+      <h1 class="text-[30px] font-bold">Mysho</h1>
+      <p class="text-[12px] font-extralight">The Standard chunk of lorem ipsum used since the 1500s is reprodused blow for those interest</p>
+      <div class="flex gap-10">
+        <img src="./img/twitter.png" style="" class="bg-black w-[20px]" alt=""> 
+        <img src="./img/instagram.png" style="" class="bg-black w-[20px]" alt=""> 
+        <img src="./img/facebook.png" style="" class="bg-black w-[20px]" alt=""> 
+      </div>
+      <p>@ 2026 Mysho.com</p>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

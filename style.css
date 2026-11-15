@@ -11,3 +11,18 @@
    margin-top: 0px;
    justify-content: center;
 }
+
+#con_container{
+   margin: 30px;
+   padding: 30px;
+   border-radius: 10px;
+   width: 400px;
+}
+
+@media screen and (min-width:600px) 
+{
+   #con_container{
+      width: 900px;
+   }  
+}
+
