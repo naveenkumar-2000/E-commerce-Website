@@ -36,9 +36,23 @@
         <img class="w-[50px] h-[35px]" src="./img/profile.png" alt="" />
       </div>
 
-      <img class="w-[70px] md:hidden" src="./img/menu.png" alt="" />
+      <img id="menuicon" class="w-[70px] md:hidden cursor-pointer" src="./img/menu.png" alt="" />
     </div>
 
+
+    <!-- Side nav bar -->
+     <div id="sidenav" class="bg-black fixed z-10 top-0 right-0 text-white transition-all duration-1000" style="width: 270px; height: 100vh; right: -270px;">
+      <div class="relative">
+        <img id="sidenav_cross" src="./img/cross.png" class="w-5 absolute right-5 top-3 cursor-pointer" alt="">
+      </div>
+        <ul class="flex flex-col items-center gap-10" style="margin-top: 70px;">
+          <a href="index.html"><li>Home</li></a>
+          <a href="collections.html"><li>Collections</li></a>
+          <a href="contact us.html">Contact Us</a>
+        </ul>
+     </div>
+
+    
     <div
       id="con_container"
       class="flex flex-col justify-self-center bg-[#1C232C] text-white"
@@ -81,6 +95,6 @@
       </div>
       <p>@ 2026 Mysho.com</p>
     </div>
-    <script src="js.js"></script>
+    <script src="Javascript.js"></script>
   </body>
 </html>
