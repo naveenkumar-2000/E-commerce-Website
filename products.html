@@ -40,36 +40,88 @@
           <a href="contact us.html">Contact Us</a>
         </ul>
      </div>
-=======================================
-     <!-- Banner Section -->
-    <div class="relative z">
-      <img class="w-full" src="./img/inner banner.jpg" alt="" />
 
-      <div id="banner-x" class="bg-[#FDEEFA] flex justify-center relative h-14">
-        <div
-          id="bannner-l"
-          class="flex w-[97%] gap-3 border bg-white h-[30px] rounded-[5px] absolute top-3 items-center"
-        >
-          <img class="max-[501px]:w-5 w-7" src="./img/returns.svg" alt="" />
-          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
-            7 Days Easy Return
-          </p>
-          <p>|</p>
-          <img class="max-[501px]:w-5 w-7" src="./img/cod.svg" alt="" />
-          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
-            Cash on Delivery
-          </p>
-          <p>|</p>
-          <img
-            class="max-[501px]:w-5 w-7"
-            src="./img/lowest-price.svg"
-            alt=""
-          />
-          <p class="max-[501px]:text-[10px] max-[900px]:font-bold text-[14px]">
-            Lowest Prices
-          </p>
-        </div>
+      <section class="divide-section">
+
+    <!-- Left side: filters -->
+    <aside class="filter-section">
+      <div class="filters-top">
+        <h2>Filters</h2>
+        <button type="button" class="clear-filters" id="clearFilters">Clear</button>
       </div>
+
+      <div class="filter-group">
+        <h3>Occasion</h3>
+        <label><input type="checkbox" name="occasion" value="summer"> Summer</label>
+        <label><input type="checkbox" name="occasion" value="party"> Party</label>
+        <label><input type="checkbox" name="occasion" value="beach"> Beach</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Colors</h3>
+        <label><input type="checkbox" name="color" value="red"> Red</label>
+        <label><input type="checkbox" name="color" value="blue"> Blue</label>
+        <label><input type="checkbox" name="color" value="white"> White</label>
+        <label><input type="checkbox" name="color" value="green"> Green</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Arrivals</h3>
+        <label><input type="checkbox" name="arrival" value="new"> New</label>
+        <label><input type="checkbox" name="arrival" value="old"> Old</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Price</h3>
+        <label><input type="checkbox" name="price" value="under300"> Under ₹300</label>
+        <label><input type="checkbox" name="price" value="300to500"> ₹300 – ₹500</label>
+        <label><input type="checkbox" name="price" value="above500"> Above ₹500</label>
+      </div>
+    </aside>
+
+    <!-- Right side: search + products -->
+    <div class="product-section">
+      <div class="navbar-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="searchInput" placeholder="search">
+      </div>
+      <p class="result-count" id="resultCount"></p>
+
+      <div class="products" id="products"></div>
+      <p class="empty-products" id="noProducts">No products match this filter. Try another option or clear filters.</p>
+    </div>
+
+    </section>
+
+
+     <!-- footer section -->
+    <div class="bg-black text-white" style="padding: 30px">
+      <h1 class="text-[30px] font-bold">Mysho</h1>
+      <p class="text-[12px] font-extralight">
+        The Standard chunk of lorem ipsum used since the 1500s is reprodused
+        blow for those interest
+      </p>
+      <div class="flex gap-10">
+        <img
+          src="./img/twitter.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+        <img
+          src="./img/instagram.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+        <img
+          src="./img/facebook.png"
+          style=""
+          class="bg-black w-[20px]"
+          alt=""
+        />
+      </div>
+      <p>@ 2026 Mysho.com</p>
     </div>
 
 
