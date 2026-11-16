@@ -25,4 +25,101 @@
       width: 900px;
    }  
 }
+/* ---------- New arrivals ---------- */
+.new-arrival {
+   display: flex;
+   gap: 16px;
+   margin-top: 16px;
+}
 
+.new-arrival-box {
+   position: relative;
+   flex: 1;
+}
+
+.new-arrival-box img {
+   width: 100%;
+   height: auto;
+   aspect-ratio: 4 / 5;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 8px;
+}
+
+.overlay {
+   position: absolute;
+   inset: 0;
+   background-color: #000000;
+   opacity: 0.45;
+   border-radius: 8px;
+}
+
+.new-arrival-box button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   padding: 2px;
+   border-radius: 5px;
+}
+
+/* most wanted section */
+.most-wanted {
+   display: flex;
+   gap: 16px;
+   margin-top: 16px;  
+   margin: 20px;
+}
+
+.most-wanted::-webkit-scrollbar {
+   display: none;
+}
+
+.most-wanted-box {
+   min-width: 220px;
+}
+
+.most-wanted-img {
+   position: relative;
+}
+
+.most-wanted-img img:first-child {
+   width: 220px;
+   height: 280px;
+   object-fit: cover;
+   border-radius: 8px;
+}
+
+.sale-badge {
+   position: absolute;
+   top: 8px;
+   left: 8px;
+   background-color: #ff6a3d;
+   color: #ffffff;
+   padding: 2px 10px;
+   border-radius: 6px;
+   font-size: 14px;
+}
+
+.like-button {
+   position: absolute;
+   top: 8px;
+   right: 8px;
+   width: 28px;
+   cursor: pointer;
+}
+
+.most-wanted-box .add-cart {
+   display: block;
+   width: 220px;
+   margin-top: 10px;
+   padding: 8px 12px;
+   border: none;
+   border-radius: 6px;
+   background-color: #1d232c;
+   color: #ffffff;
+   font-size: 13px;
+   font-weight: 600;
+   cursor: pointer;
+}

@@ -8,12 +8,9 @@
     </title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   </head>
-  <body class="bg-amber-200">
+  <body class="bg-">
     <!-- Title Heading fixed position -->
     <div
       class="flex items-center justify-between shadow-xl sticky top-0 bg-white z-10"
@@ -22,26 +19,20 @@
 
       <div class="flex border rounded-[8px] p-1 w-[40%] hidden md:flex">
         <img src="./img/search-icon.png" class="w-[50px]" alt="" />
-        <input
-          type="text"
-          placeholder="Search Here"
-          class="outline-none hidden md:flex w-[80%]"
-        />
+        <input type="text" placeholder="Search Here" class="outline-none hidden md:flex w-[80%]"/>
       </div>
 
-      <div
-        style="margin-right: 5px"
-        class="flex items-center text-gray-600 hidden md:flex"
-      >
+      <div style="margin-right: 5px" class="flex items-center text-gray-600 hidden md:flex">
         <a href=""><p>Become a Seller</p></a>
         <img class="w-[50px] h-[35px]" src="./img/cart.png" alt="" />
         <img class="w-[50px] h-[35px]" src="./img/profile.png" alt="" />
+        <img id="menuicon" class="cursor-pointer w-[70px]" src="./img/menu.png" alt="" />
       </div>
-
-      <img id="menuicon" class="cursor-pointer w-[70px] md:hidden" src="./img/menu.png" alt="" />
+      
+      <img id="menuicon-2" class="cursor-pointer w-[70px]  md:hidden" src="./img/menu.png" alt="" />
     </div>
 
-    <!-- Side nav bar -->
+    <!-- Si</i>de nav bar -->
      <div id="sidenav" class="bg-black fixed z-10 top-0 right-0 text-white transition-all duration-1000" style="width: 270px; height: 100vh; right: -270px;">
       <div class="relative">
         <img id="sidenav_cross" src="./img/cross.png" class="w-5 absolute right-5 top-3 cursor-pointer" alt="">
@@ -85,9 +76,7 @@
     </div>
 
     <!-- Brands bar sections -->
-  
-
-    <div class="brands_container .//. flex justify-around" style="margin: 8px;">
+      <div class="brands_container .//. flex justify-around" style="margin: 8px; margin-top: 20px; margin-bottom: 20px;">
       <div class="brands_container-list .//. w-fit">
         <img src="./img/icons/puma.png" class="w-10 max-[501px]:w-8"  alt="" />
         <p class="max-[501px]:text-[13px]">Puma</p>
@@ -117,6 +106,126 @@
         <p class="max-[501px]:text-[13px]">nike</p>
       </div>
     </div>
+
+    <!-- Best Customer Experience sections -->
+    <div class="cus-ex">
+      <div class="cus-ex_head min-[900px]:flex justify-between" style="margin: 20px;">
+        <h2 class="text-[25px] font-extrabold flex justify-around">We Provide Best <br> Customer Experience</h2>
+        <p>|| We ensure that our customer have the bessst Shopping Experience</p>
+      </div>
+      <div class="min-[900px]:flex">
+        <div class="bg-[#F2F4F7]" style="padding:13px; margin:10px; border-radius: 10px;">
+          <i class="fa-regular fa-circle-check text-orange-600"></i>
+          <h2 class="font-bold text-[20px]">Original Products</h2>
+          <p>Every piece is courced from trusted brands, so you shop authentic styles with confidence.</p>
+        </div>
+        <div class="bg-[#F2F4F7]" style="padding:13px; margin:10px; border-radius: 10px;">
+          <i class="fa-regular fa-face-smile text-orange-600"></i>
+          <h2 class="font-bold text-[20px]">Satisfaction Guarantee</h2>
+          <p>Not happy with your order? Return it easily and we will make it right.</p>
+        </div>
+        <div class="bg-[#F2F4F7]" style="padding:13px; margin:10px; border-radius: 10px;">
+          <i class="fa-regular fa-clock text-orange-600"></i>
+          <h2 class="font-bold text-[20px]">New Arrival Everyday</h2>
+          <p>Fresh looks drop daily, so you can always find something new to wear.</p>
+        </div>
+        <div class="bg-[#F2F4F7]" style="padding:13px; margin:10px; border-radius: 10px;">
+          <i class="fa-solid fa-truck-fast text-orange-600"></i>
+          <h2 class="font-bold text-[20px]">Fast & Free Shipping</h2>
+          <p>Orders ship quickly at no extra cost, and you can track them until they arrive.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- New Arrivals -->
+  <section class="container" style="margin-left: 23px;" id="new-arrival">
+    <h1 class="text-[30px] font-bold">New Arrivals</h1>
+    <div class="new-arrival">
+      <div class="new-arrival-box">
+        <img src="img/products/n1.jpg" alt="Sky camp shirt">
+        <div class="overlay"></div>
+        <button type="button" class="add-cart .//. bg-white" data-name="Sky Camp Shirt" data-price="249">Add to cart</button>
+      </div>
+      <div class="new-arrival-box">
+        <img src="img/products/n2.jpg" alt="Harbor knit tee">
+        <div class="overlay"></div>
+        <button type="button" class="add-cart .//. bg-white" data-name="Harbor Knit" data-price="289">Add to cart</button>
+      </div>
+      <div class="new-arrival-box">
+        <img src="img/products/n3.jpg" alt="Midnight print shirt">
+        <div class="overlay"></div>
+        <button type="button" class="add-cart .//. bg-white" data-name="Midnight Shirt" data-price="320">Add to cart</button>
+      </div>
+      <div class="new-arrival-box">
+        <img src="img/products/n4.jpg" alt="Ivory stacked tees">
+        <div class="overlay"></div>
+        <button type="button" class="add-cart  .//. bg-white" data-name="Ivory Resort Shirt" data-price="365">Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- Most Wanted Section -->
+    <section class="container" id="most-wanted">
+    <h1 class="text-[30px] font-bold" style="margin-left: 23px;">Most Wanted</h1>
+    <div class="most-wanted" style="justify-content: space-around;">
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/n5.jpg" alt="Most wanted 1">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Cedar Work Shirt" data-price="399">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/n6.jpg" alt="Most wanted 2">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Olive Weekend Shirt" data-price="420">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/n7.jpg" alt="Most wanted 3">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Ink Stripe Shirt" data-price="450">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/n8.jpg" alt="Most wanted 4">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Sand Travel Shirt" data-price="480">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/f1.jpg" alt="Most wanted 5">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Floral Summer Shirt" data-price="220">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/f2.jpg" alt="Most wanted 6">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Summer Green" data-price="260">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/f3.jpg" alt="Most wanted 7">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Party Floral Shirt" data-price="399">Add to cart</button>
+      </div>
+      <div class="most-wanted-box">
+        <div class="most-wanted-img">
+          <img src="img/products/f4.jpg" alt="Most wanted 8">
+          <p class="sale-badge">sale</p>
+        </div>
+        <button type="button" class="add-cart" data-name="Beach Floral Shirt" data-price="399">Add to cart</button>
+      </div>
+    </div>
+  </section>
 
     <!-- footer section -->
     <div class="bg-black text-white" style="padding: 30px">
